@@ -293,9 +293,10 @@ Directorios relevantes para el curso:
 
   `/sys`                              información y objetos relacionados
                                       con kernel y dispositivos
-
+  
   `/dev`                              dispositivos representados como
                                       archivos
+  
   -----------------------------------------------------------------------
 
 Ejercicio:
