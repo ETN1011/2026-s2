@@ -559,15 +559,15 @@ git log
 
 Interpretación:
 
-  Comando        Función
-  -------------- ---------------------------------------------
-  `git clone`    obtiene una copia de un repositorio
-  `git status`   muestra el estado del directorio de trabajo
-  `git add`      selecciona cambios para el próximo commit
-  `git commit`   registra un cambio en el historial local
-  `git pull`     incorpora cambios del repositorio remoto
-  `git push`     publica commits en el repositorio remoto
-  `git log`      consulta el historial
+  |Comando      |  Función                                    |
+  |-------------|---------------------------------------------|
+  |`git clone`  |  obtiene una copia de un repositorio        |
+  |`git status` |  muestra el estado del directorio de trabajo|
+  |`git add`    |  selecciona cambios para el próximo commit  |
+  |`git commit` |  registra un cambio en el historial local   |
+  |`git pull`   |  incorpora cambios del repositorio remoto   |
+  |`git push`   |  publica commits en el repositorio remoto   |
+  |`git log`    |  consulta el historial                      |
 
 ------------------------------------------------------------------------
 
