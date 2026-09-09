@@ -93,9 +93,7 @@ Una estructura sugerida es:
 
 ``` text
 lab01/
-├── README.md
-├── topologia.md
-├── comandos.md
+├── informe-lab01.md
 └── evidencias/
 ```
 
@@ -108,7 +106,7 @@ Antes de iniciar:
 git status
 ```
 
-Registrar en `README.md`:
+Registrar en informe:
 
 -   nombre del estudiante;
 -   fecha;
@@ -531,29 +529,7 @@ Documente:
 
 ------------------------------------------------------------------------
 
-# 15. Reto de diagnóstico
-
-El docente introducirá o indicará **una modificación adicional** en la
-topología. El estudiante deberá diagnosticarla sin recibir la solución.
-
-Ejemplos de fallas que el docente puede utilizar:
-
--   dirección IPv4 incorrecta;
--   longitud de prefijo incorrecta;
--   interfaz deshabilitada;
--   interfaz asignada al namespace equivocado;
--   ausencia de una dirección;
--   cambio de uno de los nodos a otra subred.
-
-El estudiante puede utilizar OpenCode, documentación y páginas de
-manual.
-
-La defensa deberá explicar **por qué** la falla impedía la conectividad
-y qué evidencia permitió localizarla.
-
-------------------------------------------------------------------------
-
-# 16. Uso de OpenCode
+# 15. Uso de OpenCode
 
 OpenCode puede utilizarse durante todo el laboratorio.
 
@@ -609,7 +585,7 @@ sido especialmente útil:
 
 # 17. Documentación del laboratorio
 
-El archivo principal `README.md` deberá contener como mínimo:
+El archivo de informe deberá contener como mínimo:
 
 ``` markdown
 # Laboratorio 1 — Redes virtuales con Linux
@@ -736,106 +712,8 @@ mantenga.
 
 ------------------------------------------------------------------------
 
-# 21. Defensa individual
 
-La defensa forma parte del laboratorio. El docente podrá solicitar
-modificaciones y preguntas sobre la topología en ejecución.
-
-Preguntas posibles:
-
-1.  ¿Qué es un *network namespace*?
-2.  ¿Qué recursos de networking quedan aislados?
-3.  ¿Qué es un par `veth`?
-4.  ¿Por qué `vethA` no aparece en el `ip link` del espacio principal
-    después de moverla?
-5.  ¿Qué significa `/30`?
-6.  ¿Qué ruta utiliza `hostA` para llegar a `10.10.1.2`?
-7.  ¿Por qué no se necesita un gateway en esta topología?
-8.  ¿Qué función cumple ARP?
-9.  ¿Qué diferencia existe entre `ip link`, `ip addr`, `ip route` e
-    `ip neigh`?
-10. ¿Qué ocurrirá si se baja `vethB`?
-11. ¿Qué ocurriría si `hostB` se configura como `10.10.2.1/30`?
-12. ¿Cómo demostraría que un problema es de capa 2, direccionamiento o
-    routing?
-13. ¿Qué información obtuvo de OpenCode y cómo comprobó que era
-    correcta?
-14. ¿Qué aporta Git al trabajo realizado?
-15. ¿Podría otra persona reproducir su topología a partir del
-    repositorio?
-
-El docente podrá modificar una dirección, interfaz o estado de enlace y
-solicitar al estudiante que diagnostique el problema.
-
-------------------------------------------------------------------------
-
-# 22. Criterios de evaluación
-
-De acuerdo con el criterio general de evaluación de laboratorios de la
-asignatura:
-
-  Criterio                   Peso
-  ------------------------ ------
-  Funcionamiento             40 %
-  Pruebas y diagnóstico      30 %
-  Reproducibilidad           20 %
-  Explicación individual     10 %
-
-## Funcionamiento --- 40 %
-
-Se comprobará que:
-
--   la topología solicitada existe;
--   el direccionamiento es correcto;
--   las interfaces se encuentran en los namespaces correspondientes;
--   existe conectividad extremo a extremo.
-
-## Pruebas y diagnóstico --- 30 %
-
-Se evaluará:
-
--   selección adecuada de comandos de verificación;
--   interpretación de rutas y vecinos;
--   observación del tráfico;
--   diagnóstico de la falla;
--   demostración de la recuperación.
-
-## Reproducibilidad --- 20 %
-
-Se evaluará:
-
--   claridad del Markdown;
--   topología y direccionamiento documentados;
--   comandos relevantes;
--   evidencias seleccionadas;
--   historial Git;
--   posibilidad de reproducir el ejercicio.
-
-## Explicación individual --- 10 %
-
-El estudiante deberá explicar y modificar su configuración durante la
-defensa sin depender de una secuencia memorizada.
-
-------------------------------------------------------------------------
-
-# 23. Distribución sugerida de las cuatro horas
-
-        Tiempo Actividad
-  ------------ -----------------------------------------------------
-    0:00--0:20 preparación del repositorio y reconocimiento de red
-    0:20--1:20 construcción de namespaces, veth y direccionamiento
-    1:20--2:00 rutas, conectividad y vecinos
-    2:00--2:30 captura y análisis de tráfico
-    2:30--3:00 falla controlada y reto de diagnóstico
-    3:00--3:20 documentación, commits y publicación
-    3:20--4:00 defensa individual y modificaciones solicitadas
-
-Los tiempos son orientativos. La topología deberá permanecer disponible
-hasta concluir la defensa.
-
-------------------------------------------------------------------------
-
-# 24. Resultado conceptual del Laboratorio 1
+# 21. Resultado conceptual del Laboratorio 1
 
 Al finalizar se habrá construido:
 
